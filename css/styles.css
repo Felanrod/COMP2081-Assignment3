@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+/* ANIMATIONS
+-------------------------------------------------- */
+
+#bouncy {
+	position: absolute;
+    left: 35%;
+    top: 50%;
+	animation: bouncy 0.8s alternate ease-in infinite;
+}
+
+@keyframes bouncy {
+	from {
+		transform: translateY(-300px) scale(1, 1);
+    }
+	88% {
+        transform: translateY(-50px) scale(0.8, 1.5);
+    }
+	to {
+		transform: translateY(0) scale(1.3, 0.6);
+    }
+}
